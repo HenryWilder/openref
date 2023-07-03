@@ -1,0 +1,57 @@
+{
+    "traits": {
+        "firstname": "Amity",
+        "lastname": "Smile",
+        "nicknames": ["Amy"]
+    },
+
+    "header": {
+        "colors": {
+            "eyeLeft": "rgb(219,192,31)",
+            "eyeRight": "rgb(213,35,33)"
+        },
+        "eyeAmity": {
+            "baseFeature": "eye",
+            "iris": {
+                "shape": "round",
+                "size": "average"
+            },
+            "pupil": {
+                "shape": "round",
+                "size": "average"
+            },
+            "sclera": {
+                "color": "#FFF"
+            }
+        }
+    },
+
+    "body": {
+        "head": {
+            "eyeLeft": {
+                "baseFeature": "eyeAmity",
+                "iris": {
+                    "color": "@colors.eyeLeft"
+                }
+            },
+            "eyeRight": {
+                "baseFeature": "eyeAmity",
+                "iris": {
+                    "color": "@colors.eyeRight"
+                },
+                "transform": {
+                    "mirror": "x"
+                }
+            },
+            "mouth": {
+                "fangLeft": {
+                    "baseFeature": "fang"
+                },
+                "fangRight": {
+                    "baseFeature": "fang",
+                    "mirror": "x"
+                }
+            }
+        }
+    }
+}
